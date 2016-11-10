@@ -1,0 +1,55 @@
+a:not([href]) {
+  /* Missing href attribute */
+  position: relative;
+  border: 2px solid red;
+}
+
+a:not([href]):after {
+  content: "Missing href attribute";
+  background-color: red;
+  display: block;
+  pointer-events: none;
+  color: black;
+  position: absolute;
+  top: -100%;
+  left: 100%;
+  width: 150px;
+}
+
+a[href=""] {
+  /* Empty href attribute */
+  position: relative;
+  border: 2px solid red;
+}
+
+a[href=""]:after {
+  content: "Empty href attribute";
+  background-color: red;
+  display: block;
+  pointer-events: none;
+  color: black;
+  position: absolute;
+  top: -100%;
+  left: 100%;
+  width: 150px;
+}
+
+a[href="#"] {
+  /* Hash (#) only */
+  position: relative;
+  border: 2px solid orange;
+}
+
+a[href="#"]:after {
+  content: "Hash (#) only";
+  background-color: orange;
+  display: block;
+  pointer-events: none;
+  color: black;
+  position: absolute;
+  top: -100%;
+  left: 100%;
+  width: 150px;
+}
+
+/*# sourceMappingURL=maps/debugCSS.css.map */

@@ -22,8 +22,18 @@ Visit http://www.dimshik.com/debugCSS/ to install the bookmarklet.
 Todo:
 -----
 
-* 
+* Add more debugging scenarios
+* Design error messages
 
+
+Contribute:
+-----
+
+run `npm install` then `gulp`.
+
+This will get all dependencies and build `debugCSS.css` file in `dist -> css`.
+
+This will also run a gulp watcher to live reload the changes you make.
 
 Credits:
 --------
