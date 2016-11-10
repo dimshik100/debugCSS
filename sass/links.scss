@@ -1,0 +1,26 @@
+a {
+	&:not([href]) {
+		/* Missing href attribute */
+		position: relative;
+		@include error;
+		&:after {
+			@include ErrorMsg('Missing href attribute');
+		}
+	}
+	&[href=""] {
+		/* Empty href attribute */
+		position: relative;
+		@include error;
+		&:after {
+			@include ErrorMsg('Empty href attribute');
+		}
+	}
+	&[href="#"] {
+		/* Hash (#) only */
+		position: relative;
+		@include warning;
+		&:after {
+			@include WarningMsg('Hash (#) only');
+		}
+	}
+}

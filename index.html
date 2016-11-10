@@ -1,0 +1,49 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+
+	<title>debugCSS</title>
+	<meta name="description" content="A style-sheet to help visually identify potential errors in HTML.">
+	<meta name="author" content="Dima Vishnevetsky">
+
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="dist/css/debugCSS.css">
+</head>
+
+<body>
+	<h2>Links</h2>
+	<ul class="issues">
+		<li>
+			<h3><code>href</code> Attribute</h3>
+
+			<div class="explanation">
+				<h4>Why?</h4>
+				<p>An anchor tag should always have an <code>href</code> value defined.</p>
+			</div>
+
+			<div class="example">
+				<p><a>Missing attribute</a></p>
+				<p><a href="">Empty attribute</a></p>
+				<p><a href="#">Hash (#) only</a></p>
+				<p><a href="javascript:void(0)">Obtrusive JavaScript</a></p>
+			</div>
+		</li>
+		<li>
+			<h3><code>target</code> Attribute</h3>
+
+			<div class="explanation">
+				<h4>Why?</h4>
+				<p>The <code>target</code> attribute should never be used.</p>
+			</div>
+
+			<div class="example">
+				<p><a href="#fpo" target="_blank">Example</a></p>
+			</div>
+		</li>
+	</ul>
+</body>
+
+</html>

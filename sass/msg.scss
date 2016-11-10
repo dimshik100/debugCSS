@@ -1,0 +1,21 @@
+@mixin msg(){
+		display: block;
+	pointer-events: none;
+	color: black;
+	position: absolute;
+	top: -100%;
+	left: 100%;
+	width: 150px;
+}
+
+@mixin ErrorMsg($text) {
+	content: $text;
+	background-color: red;
+	@include msg();
+}
+
+@mixin WarningMsg($text) {
+	content: $text;
+	background-color: orange;
+@include msg();
+}
