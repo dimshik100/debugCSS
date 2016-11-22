@@ -1,3 +1,4 @@
+/*TODO: Add positions to msgs as a parameter - top, right, bottom, left*/
 a:not([href]) {
   /* Missing href attribute */
   position: relative;
@@ -14,6 +15,9 @@ a:not([href]):after {
   top: -100%;
   left: 100%;
   width: 150px;
+  font-size: 14px;
+  font-family: 'arial';
+  font-weight: normal;
 }
 
 a[href=""] {
@@ -32,6 +36,9 @@ a[href=""]:after {
   top: -100%;
   left: 100%;
   width: 150px;
+  font-size: 14px;
+  font-family: 'arial';
+  font-weight: normal;
 }
 
 a[href="#"] {
@@ -50,6 +57,229 @@ a[href="#"]:after {
   top: -100%;
   left: 100%;
   width: 150px;
+  font-size: 14px;
+  font-family: 'arial';
+  font-weight: normal;
+}
+
+h1:empty {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  border: 2px solid orange;
+}
+
+h1:empty:after {
+  content: "Empty h1 element";
+  background-color: orange;
+  display: block;
+  pointer-events: none;
+  color: black;
+  position: absolute;
+  top: -100%;
+  left: 100%;
+  width: 150px;
+  font-size: 14px;
+  font-family: 'arial';
+  font-weight: normal;
+}
+
+h2:empty {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  border: 2px solid orange;
+}
+
+h2:empty:after {
+  content: "Empty h2 element";
+  background-color: orange;
+  display: block;
+  pointer-events: none;
+  color: black;
+  position: absolute;
+  top: -100%;
+  left: 100%;
+  width: 150px;
+  font-size: 14px;
+  font-family: 'arial';
+  font-weight: normal;
+}
+
+h3:empty {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  border: 2px solid orange;
+}
+
+h3:empty:after {
+  content: "Empty h3 element";
+  background-color: orange;
+  display: block;
+  pointer-events: none;
+  color: black;
+  position: absolute;
+  top: -100%;
+  left: 100%;
+  width: 150px;
+  font-size: 14px;
+  font-family: 'arial';
+  font-weight: normal;
+}
+
+h4:empty {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  border: 2px solid orange;
+}
+
+h4:empty:after {
+  content: "Empty h4 element";
+  background-color: orange;
+  display: block;
+  pointer-events: none;
+  color: black;
+  position: absolute;
+  top: -100%;
+  left: 100%;
+  width: 150px;
+  font-size: 14px;
+  font-family: 'arial';
+  font-weight: normal;
+}
+
+h5:empty {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  border: 2px solid orange;
+}
+
+h5:empty:after {
+  content: "Empty h5 element";
+  background-color: orange;
+  display: block;
+  pointer-events: none;
+  color: black;
+  position: absolute;
+  top: -100%;
+  left: 100%;
+  width: 150px;
+  font-size: 14px;
+  font-family: 'arial';
+  font-weight: normal;
+}
+
+h6:empty {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  border: 2px solid orange;
+}
+
+h6:empty:after {
+  content: "Empty h6 element";
+  background-color: orange;
+  display: block;
+  pointer-events: none;
+  color: black;
+  position: absolute;
+  top: -100%;
+  left: 100%;
+  width: 150px;
+  font-size: 14px;
+  font-family: 'arial';
+  font-weight: normal;
+}
+
+a:empty {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  border: 2px solid orange;
+}
+
+a:empty:after {
+  content: "Empty a element";
+  background-color: orange;
+  display: block;
+  pointer-events: none;
+  color: black;
+  position: absolute;
+  top: -100%;
+  left: 100%;
+  width: 150px;
+  font-size: 14px;
+  font-family: 'arial';
+  font-weight: normal;
+}
+
+p:empty {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  border: 2px solid orange;
+}
+
+p:empty:after {
+  content: "Empty p element";
+  background-color: orange;
+  display: block;
+  pointer-events: none;
+  color: black;
+  position: absolute;
+  top: -100%;
+  left: 100%;
+  width: 150px;
+  font-size: 14px;
+  font-family: 'arial';
+  font-weight: normal;
+}
+
+ol:empty {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  border: 2px solid orange;
+}
+
+ol:empty:after {
+  content: "Empty ol element";
+  background-color: orange;
+  display: block;
+  pointer-events: none;
+  color: black;
+  position: absolute;
+  top: -100%;
+  left: 100%;
+  width: 150px;
+  font-size: 14px;
+  font-family: 'arial';
+  font-weight: normal;
+}
+
+ul:empty {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  border: 2px solid orange;
+}
+
+ul:empty:after {
+  content: "Empty ul element";
+  background-color: orange;
+  display: block;
+  pointer-events: none;
+  color: black;
+  position: absolute;
+  top: -100%;
+  left: 100%;
+  width: 150px;
+  font-size: 14px;
+  font-family: 'arial';
+  font-weight: normal;
 }
 
 /*# sourceMappingURL=maps/debugCSS.css.map */

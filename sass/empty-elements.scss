@@ -1,0 +1,19 @@
+@mixin emptyElement($element) {
+	&:empty {
+		width: 20px;
+		height: 20px;
+		position: relative;
+		@include warning;
+		&:after {
+			@include WarningMsg('Empty '+ $element + ' element');
+		}
+	}
+}
+
+$empty-elements: h1 h2 h3 h4 h5 h6 a p ol ul;
+@each $element in $empty-elements {
+	//$i: index($empty-elements, $element);
+	#{$element} {
+		@include emptyElement(#{$element});
+	}
+}

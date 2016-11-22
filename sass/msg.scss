@@ -1,12 +1,33 @@
-@mixin msg(){
-		display: block;
+@mixin msg() {
+	display: block;
 	pointer-events: none;
 	color: black;
 	position: absolute;
 	top: -100%;
 	left: 100%;
 	width: 150px;
+	font-size: 14px;
+	font-family: 'arial';
+	font-weight: normal;
 }
+
+//// If statement example
+//
+//@mixin clearfix($width: 'auto') {
+//
+//  @if $width == 'auto' {
+//
+//    // if width is not passed, or empty do this
+//
+//  } @else {
+//
+//    display: inline-block;
+//    width: $width;
+//
+//  }
+//}
+
+/*TODO: Add positions to msgs as a parameter - top, right, bottom, left*/
 
 @mixin ErrorMsg($text) {
 	content: $text;
@@ -17,5 +38,5 @@
 @mixin WarningMsg($text) {
 	content: $text;
 	background-color: orange;
-@include msg();
+	@include msg();
 }

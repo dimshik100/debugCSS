@@ -24,6 +24,8 @@ Todo:
 
 * Add more debugging scenarios
 * Design error messages
+* Add support for error message positions
+* Add support for multiple errors on single element
 
 
 Contribute:
